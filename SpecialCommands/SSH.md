@@ -13,10 +13,10 @@ $ ssh -i ~/.ssh/<key name> <user>@<ip> # 접속
 
 ```bash
 # 로컬 -> 서버
-$ scp <파일 경로> <server name>@<ip>:<저장 경로> # 파일 하나
-$ scp -r <폴더 경로> <server name>@<ip>:<저장 경로> # 폴더 전체
+$ scp <파일 경로> <user>@<ip>:<저장 경로> # 파일 하나
+$ scp -r <폴더 경로> <user>@<ip>:<저장 경로> # 폴더 전체
 
 # 서버 -> 로컬
-$ scp <server name>@<ip>:<파일 경로> <저장 경로> # 파일 하나
-$ scp -r  <server name>@<ip>:<폴더 경로> <저장 경로> # 폴더 전체
+$ scp <user>@<ip>:<파일 경로> <저장 경로> # 파일 하나
+$ scp -r <user>@<ip>:<폴더 경로> <저장 경로> # 폴더 전체
 ```
